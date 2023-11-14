@@ -7,7 +7,7 @@ dependencies {
   providedCompile 'org.eclipse.microprofile:microprofile:3.3'
   providedCompile 'org.eclipse.microprofile.reactive.messaging:microprofile-reactive-messaging-api:1.0'
   
-  compile 'org.apache.kafka:kafka-clients:3.6.0'
+  compile 'org.apache.kafka:kafka-clients:2.4.0'
   
   testCompile project(':microshed-testing-testcontainers')
   testCompile project(':microshed-testing-core')

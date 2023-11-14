@@ -20,8 +20,10 @@ package org.example.app.it;
 
 import org.microshed.testing.SharedContainerConfiguration;
 import org.testcontainers.containers.GenericContainer;
+import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.utility.DockerImageName;
 
 public class QuarkusTestEnvironment implements SharedContainerConfiguration {
     
@@ -32,7 +34,7 @@ public class QuarkusTestEnvironment implements SharedContainerConfiguration {
     public static PostgreSQLContainer<?> db = new PostgreSQLContainer<>();
     
     @Container
-    public static GenericContainer<?> mongo = new GenericContainer<>("mongo:3.4")
-        .withExposedPorts(27017);
+    public static MongoDBContainer mongo = new MongoDBContainer(DockerImageName.parse("mongo:4.0.10"));
+//        .withExposedPorts(27017);
     
 }
