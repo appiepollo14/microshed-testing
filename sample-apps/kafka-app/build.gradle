@@ -12,7 +12,7 @@ dependencies {
   testCompile project(':microshed-testing-testcontainers')
   testCompile project(':microshed-testing-core')
   
-  testCompile 'org.awaitility:awaitility:4.0.2'
+  testCompile 'org.awaitility:awaitility:4.2.0'
   testCompile 'org.testcontainers:kafka:1.15.0'
   testCompile 'org.slf4j:slf4j-log4j12:1.7.36'
 
