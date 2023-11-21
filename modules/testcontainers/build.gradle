@@ -15,7 +15,7 @@ sourceSets {
 }
 
 dependencies {
-  compile 'org.testcontainers:junit-jupiter:1.19.1'
+  compile 'org.testcontainers:junit-jupiter:1.19.3'
   compileOnly project(':microshed-testing-core')
   testCompile 'org.eclipse.microprofile.rest.client:microprofile-rest-client-api:1.4.1'
   testCompile 'org.slf4j:slf4j-log4j12:1.7.36'
